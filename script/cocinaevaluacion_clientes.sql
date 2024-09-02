@@ -1,0 +1,55 @@
+-- MySQL dump 10.13  Distrib 8.0.36, for Win64 (x86_64)
+--
+-- Host: localhost    Database: cocinaevaluacion
+-- ------------------------------------------------------
+-- Server version	8.0.37
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `clientes`
+--
+
+DROP TABLE IF EXISTS `clientes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `clientes` (
+  `idCLIENTE` int NOT NULL,
+  `NIFCLIENTE` varchar(12) COLLATE utf8mb4_general_ci NOT NULL,
+  `NOMBRECLIENTE` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
+  `DIRECCIONCLIENTE` text COLLATE utf8mb4_general_ci NOT NULL,
+  `telefonoCliente` varchar(15) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `EMAIL` varchar(50) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  PRIMARY KEY (`idCLIENTE`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `clientes`
+--
+
+LOCK TABLES `clientes` WRITE;
+/*!40000 ALTER TABLE `clientes` DISABLE KEYS */;
+INSERT INTO `clientes` VALUES (1,'54052635H','MARY CARMEN GUERRERO','CALLE BUENA VISTA Nº 6','922895623',NULL),(2,'78635241T','MARCO MICHIOTI LUNE','CALLE LUPILLO EDIFICIO AMARGO Nº5 1PB','922784512',NULL),(3,'12345678A','Pedro Martinez','Avenida Sol N° 10','654321987',NULL),(4,'87654321B','Lucia Fernandez','Calle Luna N° 20','789456123',NULL),(5,'11223344C','Juan Perez','Plaza Mayor N° 5','321654987',NULL),(6,'22334455D','Ana Lopez','Calle Flor N° 3','741258963',NULL),(7,'33445566E','Jose Sanchez','Avenida Mar N° 12','852369741',NULL),(8,'44556677G','Sofia Torres','Calle Amanecer Nº 4','912345678',NULL),(9,'55667788H','Luis Rivera','Avenida Paz Nº 15','923456789',NULL),(10,'66778899I','Miguel Angel','Calle Estrella Nº 9','934567890',NULL);
+/*!40000 ALTER TABLE `clientes` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-09-02 20:00:13
