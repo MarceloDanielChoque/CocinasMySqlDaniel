@@ -1,9 +1,10 @@
 # Base de datos cocinas
 
-### Autor: ***Marcelo Daniel Choque Mamani***
-### Lenguaje: Sql
-### Tecnologia: MySQL workbench 
-### Idioma: Spanish
+### Informacion adicional:
+- Autor: ***Marcelo Daniel Choque Mamani***
+- Lenguaje: Sql
+- Tecnologia: MySQL workbench 
+- Idioma: Spanish
 
 La base de datos cocinas es una bbdd sencilla, simulandola venta de cocinas y su posterior instalacion, registrando las instalaciones asi como los instaladores que la realizan.
 
@@ -34,3 +35,5 @@ La base de datos cocinas es una bbdd sencilla, simulandola venta de cocinas y su
       - compras
       - instalacion
       - instaladores
+
+<img src="https://github.com/MarceloDanielChoque/imagenes/blob/main/img/imagenBBDDcocinasRelacional.png">
